@@ -1,0 +1,745 @@
+/*---------Common---------- */
+
+@import 'reset';
+@import 'font';
+
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #b64036;
+}
+ 
+body{
+	font-size: 16px;
+	font-family: 'Raleway Light'; 
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+.screen-reader-text:focus {
+   /* functinonal styles */
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000;
+   /* decorative styles */
+   background-color: #f1f1f1;
+   border-radius: 3px;
+   box-shadow: 1px 1px 6px rgba(100, 100, 100, 0.8);
+   font-weight: bold;
+   line-height: normal;
+   outline: none;
+   padding: 1rem;
+   text-decoration: none;
+}
+
+*:focus{
+	color:#e2574c;
+}
+
+
+/*__________________MEDIA QUERIES Start______________*/
+ 
+ /*----------For Mobile--------*/
+
+
+/*--------- Logo Menu Cart ----------*/
+section.logo-menu-cart {
+	display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+	flex:0 0 25%;
+	img{
+		width: 100%;
+	}
+}
+
+
+.cart{
+	flex:0 0 10%;
+	img{
+		width: 100%;
+	}
+}
+
+
+ .mobile-menu{
+    	display: block;
+    }
+
+  	.m-menu{
+    	display: flex;
+    	justify-content: space-around;
+    	padding: 8px;
+   
+  		a{
+	    	color: red;
+	    	font-size: 0.7em;
+	    	font-family: 'Raleway';
+	    	text-transform: uppercase;
+	    	color:#e2574c;
+    	}
+	}
+		hr{
+			margin-top:0;
+			margin-bottom:0;
+			width:95%;
+		}
+
+    .d-menu{
+    	display: none;
+    }
+
+
+/*_________Banner________*/
+
+div.banner-txt {
+	position: absolute;
+    top: 33%;
+    width: 65%;
+    left: 17%;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 1px 0px #242424;
+    margin: 0 auto;
+}
+		.banner-txt p {
+			font-family: "Raleway"; 
+			font-size: 0.6em;
+			font-weight: bold;
+		}
+
+		.banner-txt h1 {
+			font-family:'Playfair Display', serif;
+			font-size: 1.8em;
+		}
+
+div.banner-girl {
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    width: 35%;
+    height: 90%;
+    filter: brightness(95%);
+}
+		.banner-girl img {
+			width: 100%;
+			height: 100%;
+		}
+
+
+section.banner {
+	background: url(../img/flower-bkgd.jpg) no-repeat;
+    background-size: cover;
+    height: 24em;
+    position: relative;
+    filter: brightness(80%);
+
+}
+
+/* -----------------------------------------
+	Hand-Crafted Styles Text & 
+	Most Loved Products Text & Sign Up
+------------------------------------------ */
+.body-text{
+	height: auto;
+	text-align: center;
+	font-family:'Playfair Display', serif;
+}
+	.txt{
+	    width: 97%;
+    	margin: auto;
+	}
+    	h2{
+			padding-top: 30px;
+		    line-height: 2.5;
+		    font-style: italic;
+		    font-size: 1.7em;
+		}
+
+	span{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 1em;
+		}
+		
+
+	.mtxt{
+			font-family:'Raleway';
+			font-size: 15px;
+			line-height: 1.7;
+			color:#969696;
+			margin-bottom: 3em;
+		}
+ 
+
+
+
+/*___Text_____*/
+
+	/*section.body-text div.txt{
+	    width: 97%;
+    	margin: auto;
+	}	
+
+	.body-text div p.mtxt{
+		font-size: 15px;
+		line-height: 1.7;
+  	 }	*/
+
+
+/*__________mobile Gallery___________*/
+
+.gallery{
+		display:flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		
+		.box{
+			flex: 0 47.75%;
+	    	margin: 2.5px;
+		    position: relative;
+		}
+	
+		.m-bigbox {
+    			flex: 0 100%;
+    			margin: 2.5px;
+		    	position: relative;
+    	   	}
+		
+			img{
+				width: 100%;
+				height: 100%;
+				filter: brightness(80%);
+			}
+
+			p{
+				position: absolute;
+				top: 41%;
+				left: 36%;
+				font-size: 0.8em;
+				font-family: "Raleway";
+			    font-weight: 500;
+
+			    a{
+					color: #fff;
+					font-size: 1.5em;
+					z-index: 2;
+				}
+	 		}
+		
+}
+	
+
+		
+
+	/*.gallery div.box{
+		flex: 0 47.75%;
+	    margin: 2.5px;
+	 }
+
+	
+	.gallery .box p{
+		left: 36%;
+		font-size: 0.8em;
+	 }
+
+	.box.bigbox.m-bbox {
+    		flex: 0 100%;
+	}*/
+
+
+/*__________Carousel___________*/
+.main-carousel{
+	height: auto;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.main-carousel div.carousel-cell {
+	width: 100%;
+}
+
+.carousel-cell img{
+  	width: 100%;
+ }
+
+ .despt-box p:nth-child(1){
+	font-size: 12px;
+	font-family: 'Raleway';
+	color:#969696;
+ }
+ .despt-box p:nth-child(2){
+ 	font-size: 16px;
+	font-family: 'Playfair Display', serif;
+	color: #e2574c;
+ }
+ .despt-box p:nth-child(3){
+ 	font-size: 13px;
+	font-family: 'Raleway';
+	color:#969696;
+ }
+
+.despt-box{
+	width: 100%;
+	height: 100px;
+	line-height: 1.5;
+	text-align: center;
+}		
+
+/*__________mobile sign up___________*/
+	
+	.m-signup{
+		height: 16em;
+		background: url(../img/wave-bkgd.jpg) no-repeat;
+	    background-size: cover;
+	    background-position: bottom;
+	    margin:auto;
+	
+	 p{
+		color: #fff;
+		padding: 10px;
+	}
+
+	.sign-up.m-signup .body-text div{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.sign-up.m-signup .body-text div p{
+		font-size: 13px;
+	}
+
+	.sign-up.m-signup {
+		background-size: auto;
+	}
+
+	.sign-up.m-signup div form{
+		width: 100%;
+	}
+}
+	input[type="email"]{
+		width: 48%;
+	    left: 7.5%;
+	    padding: 8px;
+	    position: relative;
+	    border: 0;
+	    font-size: 11px;
+	    border-radius: 15px;
+   	}
+
+	input[type="submit"]{
+		width: 18%;
+	    left: -12.5%;
+	    padding: 5px;
+	    position: relative;
+	    background-color: #e2574c;
+	    border-radius: 11px;
+	    box-sizing: border-box;
+	    font-size: 11px;
+	    color: #fff;
+	    border: 0;
+  	}
+
+
+/*----------mobile footer---------------*/
+
+	footer.contact-container {
+		width: 100%;
+		background-color:#242424;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.contact-container > div {
+		color:#fff;
+		padding: 30px 15px;
+	} 
+
+
+	.contact p {
+		font-family: 'Playfair Display', serif;
+		line-height: 1.5;
+		font-size: 1em;
+	}
+
+
+	.contact a.e-mail{
+		text-decoration: underline;
+		color:#fff;
+	}
+
+	.contact.m-contact p,.contact.m-contact address{
+		
+		font-family: 'Playfair Display', serif;
+		color:#969696;
+
+	}
+
+	.social ul{
+		list-style: none;
+	}
+
+	.social li a{
+		font-size: 12px;
+		color:#fff;
+		line-height: 2;
+	}
+
+	div.m-contact {
+		flex: 1;
+	}
+
+	div.social {
+		flex: 0.5;
+	}
+
+
+/*-------------------------------------------------
+					For Desktop
+----------------------------------------------------*/
+@media screen and (min-width: 1240px) {
+
+/*--------------------------------------------
+		Header Section/Logo Menu Cart
+----------------------------------------------*/
+
+.mobile-menu{
+	display: none;
+}
+
+.d-menu{
+	display: block;
+}
+
+/*--------------------------------------------
+			Banner Section
+----------------------------------------------*/
+.banner-girl {
+	    position: absolute;
+	    top: 10%;
+	    left: 40%;
+	    width: 17%;
+	    height: 90%;
+	    filter: brightness(95%);
+	}
+
+
+/* -----------------------------------------
+	Hand-Crafted Styles Text & 
+	Most Loved Products Text & Sign Up
+------------------------------------------ */
+.body-text{
+	
+	div{
+	    width: 50%;
+    	margin: auto;
+
+		h2 {
+				 padding-top: 30px;
+				 line-height: 2.5;
+				 font-style: italic;
+				 font-size: 1.7em;
+			}
+
+		span{
+				font-style: normal;
+				font-weight: bold;
+				font-size: 1em;
+			}
+
+		 p {
+				font-family:'Raleway';
+				line-height: 1.5;
+				font-size: 1em;
+				color:#969696;
+				margin-bottom: 3em;
+		    }	
+	}
+	
+}
+
+/* -----------------------------------------
+			Desktop Gallery
+------------------------------------------ */
+.gallery div p{
+				position: absolute;
+				top: 41%;
+				left: 38%;
+				font-family: "Raleway";
+				font-weight: 500;
+		 		 
+				 a{
+					color: #fff;
+					font-size: 1.5em;
+					z-index: 2;
+				}
+	}
+
+
+/* -----------------------------------------
+			Desktop Carousel
+------------------------------------------ */
+#flickity-slide{
+	.main-carousel {
+		.carousel-cell {
+						width: 25%;
+						height: auto;
+						}
+	}
+}
+
+
+/* -----------------------------------------
+			Desktop Sign Up 
+------------------------------------------ */
+.sign-up {
+		height: 17em;
+	    background: url(../img/wave-bkgd.jpg) no-repeat;
+	    background-size: cover;
+	    background-position: bottom;
+	    margin:auto;
+}
+
+	.sign-up div{
+		width: 80%;
+		margin: 0 auto;
+
+		p{
+			color: #fff;
+		}
+
+	
+		.sign-up-wrapper input[type="email"]{
+			width: 45%;
+		    left: 8%;
+		    padding: 10px;
+		    font-size: 10px;
+		}
+
+		.sign-up-wrapper input[type="submit"]{
+			width: 14%;
+		    left: -7.5%;
+		    box-sizing: border-box;
+		    font-size: 9px;
+		    padding: 7px;
+		}
+	
+	}
+
+}
+/*------------------------------------------------------
+			For Tablet
+--------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+
+/*---------------Menu-------------*/
+	nav{
+		flex:0 0 40%;
+
+		.menu {
+				display: flex;
+				justify-content: space-between;
+				list-style: none;
+				padding-top: 30px;
+			}
+
+		a{
+			text-transform: uppercase;
+			color: #e2574c;
+		}
+	}
+
+
+	.body-text div.txt{
+	    width: 85%;
+    	margin: auto;
+	}
+
+	.body-text p.tabtxt{
+		font-size: 18px;
+  	    margin-bottom: 2em;
+	}
+
+	.mobile-menu{
+		display: none;
+	}
+
+	.d-menu{
+			display: block;
+	}
+
+
+/*--------------banner----------------*/
+
+.banner {
+		width: 100%;
+	    height: 37em;
+
+	.banner-girl {
+	    position: absolute;
+	    left: 35%;
+	    width: 27%;
+	    height: 90%;
+	    filter: brightness(95%);
+			
+		img {
+				width: 100%;
+				height: 100%;
+			}
+	}
+
+	.banner-txt {
+		width: 56%;
+		position: absolute;
+	    top: 33%;
+	    left: 22%;
+	    text-align: center;
+	    text-shadow: 2px 1px 0px #242424;
+	    margin: 0 auto;
+	}
+			.banner-txt p {
+				font-family: "Raleway"; 
+				font-size: 0.8em;
+				font-weight: bold;
+			}
+
+			.banner-txt h1 {
+				font-family:'Playfair Display', serif;
+				font-size: 3.4em;
+			}
+
+}
+
+/*------------------Tablet GALLERY----------------*/
+
+.gallery{
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	.box{
+		flex: 0 24.65%;
+	    margin: 2.5px;
+	    position: relative;
+	
+	    img{
+			width: 100%;
+			height: 100%;
+			filter: brightness(80%);
+		}
+
+		p{
+			position: absolute;
+			top: 41%;
+			left: 26%;
+	    	font-size: 0.8em;
+			font-family: "Raleway";
+		    font-weight: 500;
+		 		 
+		 	a{
+				color: #fff;
+				font-size: 1.5em;
+				z-index: 2;
+			}
+		}
+	}	
+}	
+
+.gallery div.bigbox{
+					flex-grow: 3;
+					}
+
+
+
+/*-------------------Carousel----------------*/
+
+section.main-carousel .carousel-cell {
+	width: 50%;
+}
+
+
+	
+/*--------Sign Up-----------*/
+	
+	.sign-up.m-signup {
+			background-size: auto;
+		}
+
+	.sign-up {
+			height: 17em;
+		    background: url(../img/wave-bkgd.jpg) no-repeat;
+		    background-size: cover;
+		    background-position: bottom;
+		    margin:auto;
+	}
+
+	.sign-up div{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+/*--------------------Footer---------------------*/
+footer.contact-container {
+		justify-content: space-between;
+	}
+	
+	.contact p {
+		font-family: 'Playfair Display', serif;
+		line-height: 1.5;
+		font-size: 1em;
+	}
+
+	.contact a.e-mail{
+		text-decoration: underline;
+		color:#fff;
+	}
+
+	.contact address{
+		font-family: 'Playfair Display', serif;
+		color:#969696;
+	}
+
+	footer ul a{
+		color:#fff;
+		line-height: 2;
+		font-size: 1em;
+	}
+
+	.social ul{
+		list-style: none;
+		position: absolute;
+    	right: 100px;
+	}
+	
+
+}	
+
+
+
+
+
+/*---------------------------------------------------
+		************End Media Querie*********
+_______________________________________________________________*/
